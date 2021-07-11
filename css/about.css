@@ -1,0 +1,285 @@
+/* ----------------------- Responsive Navigation Bar ------------------------*/
+.navbar .res_icon1, .navbar .res_icon2{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .navbar a:not(:nth-child(5)) {display: none;}
+    .navbar a:nth-child(5){
+        width: 83.2%;
+    }
+    .navbar a.res_icon1 {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .navbar.responsive {position:relative;}
+    .navbar.responsive .res_icon1 {
+        display: none;
+    }
+    .navbar .responsive .res_icon2{
+        float: right;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: auto;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/*------- History of Organization----------*/
+
+.history{
+    background-color: #e6ffff;
+    margin:20px 20px;
+    padding: 10px 30px;
+    line-height: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 8px 0 #99ffff;
+    text-align: justify;
+}
+
+.history h1{
+    text-align: center; 
+    border-bottom: 2px solid;
+}
+
+.history p{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 550px){
+    .history p{
+        font-size: 15px;
+    }
+}
+
+/*-----------Help Through Donation------------------------*/
+
+.help{
+    background-color: #ffe6ff;
+    margin: 30px 20px;
+    padding: 10px 20px;
+    border-radius:20px;
+    box-shadow: 0 10px 10px 0 #ffccff;
+}
+
+.help h1{
+    text-align: center;
+    border-bottom: 2px solid;
+}
+
+.help ul i{
+    color: #8600b3;
+    font-size: 25px;
+}
+
+.help ul li{
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    padding-right: 30px; 
+}
+
+@media screen and (max-width: 550px){
+    .help ul li{
+        font-size: 15px;
+    }
+}
+
+/*---------------Mission of Organization--------------------------*/
+
+.mission{
+    background-color: #ffe4cc;
+    margin: 30px 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px 0 #ffc999;
+}
+
+.mission h1{
+    text-align: center;
+    border-bottom: 2px solid;
+}
+
+.mission ul i{
+    color:#00cc00;
+    font-size:25px;
+}
+
+.mission ul li, .mission p{
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 550px){
+    .mission ul li, .mission p{
+        font-size: 15px;
+    }
+}
+
+/*----------Volunteering Button-----------*/
+
+.volunteering{
+    background-color: #ffeb99;
+    display: flex;
+    margin: 20px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px 0 #cca300;
+}
+
+.vtext{
+    width: 60%;
+    margin:auto 20px;
+    text-align: center;
+    color: black;
+}
+
+.vsubmit{
+    width: 40%;
+    margin: auto 0;
+    text-align: center;
+}
+
+.vbutton{
+    width:60%;
+    background-color: deepskyblue;
+    margin: 7px auto;
+    padding:15px;
+    border-radius: 20px;
+    transition: 0.2s ease-in;
+}
+
+.vbutton a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size:14px;
+}
+
+.vbutton:hover{
+    background-color: black;
+    transition: 0.2s ease-in;
+}
+
+@media screen and (max-width: 600px){
+    .vtext h2{
+        font-size: 25px;
+    }
+    
+    .volunteering{
+        display: block;
+    }
+    
+    .vtext{
+        width: 92%;
+        padding-top: 10px; 
+        margin: auto;
+    }
+    
+    .vbutton{
+        margin: auto;
+        padding: 10px;
+    }
+    
+    .vsubmit{
+        width: 100%;
+    }
+}
+
+
+/*------------Achievements----------------*/
+
+
+
+#achievements{
+    width: 95%;
+    border-radius: 10px 10px 0 0;
+    background-color: #ccf5ff;
+    color: black;
+    padding: 20px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    font-size:30px;
+    text-align: center;
+    border-bottom: 2px solid;
+}
+
+
+.text-cards{
+    background-color: #ccf5ff;
+    width: 95%;
+    display: flex;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+    margin:0 auto 20px auto;
+    box-shadow: 0 10px 10px 0 #99ebff;
+}
+
+.text-card{
+    background-color: #fff5cc;
+    border-color: black;
+    border-bottom-width: 2px;
+    box-shadow: 0px 10px 10px 0px rgb(0,0,0,0.5);
+    margin:10px 20px;
+    width: 25%;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s ease-in;
+}
+
+.card-heading{
+    padding:20px;
+    border-radius: 10px 10px 0 0;    
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.card-numbers{
+    padding: 30px 0;
+    margin:10px;
+    font-size: 40px;
+    font-weight: 700;
+    border-bottom: 2px dotted;
+}
+
+.card-paragraph{
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.text-card:hover {
+    transform: scale(1.10);
+    transition: 0.3s ease-in;
+}
+
+@media screen and (max-width: 500px){
+    .card-paragraph{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 836px){
+    .text-cards{
+        display:block;
+    }
+    .text-card{
+        margin:0 auto;
+        margin-bottom:30px;
+        width: 90%;
+        float:none;
+    }
+}

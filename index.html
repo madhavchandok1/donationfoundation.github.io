@@ -1,0 +1,214 @@
+<!--HomePage-->
+
+<!DOCTYPE html>
+<html language="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/home.css"> 
+    </head>
+
+    <body>
+    
+    <!-- Sticky Navigation Bar -->
+    
+        <div class="top-container">
+            <a href="index.html"><img src="images/Logo.png" alt="DoNation Charitable Trust" id="logo"></a>
+        </div>
+        <div class="navbar" id="sticky-navbar">
+            <a class="head-active" href="index.html">Home</a>
+            <a href="Initiatives.html">Initiatives</a>
+            <a href="Volunteers.html">Volunteer</a>
+            <a href="Donate.html">Donate</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="ContactUs.html">Contact Us</a>
+            <a href="javascript:void(0);" class="res_icon1" onclick="responsivenavi()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="javascript:void(0);" class="res_icon2" onclick="responsivenavi()">
+                <i class="fa fa-times"></i>
+            </a>
+        </div>
+        <br>
+        
+        <script>
+            window.onscroll = function() {stickynavi()};
+
+            var header = document.getElementById("sticky-navbar");
+            var sticky = header.offsetTop;
+            
+            function stickynavi(){
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } 
+                else{
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+        
+        <script>
+            function responsivenavi(){
+                var x = document.getElementById("sticky-navbar");
+                if (x.className === "navbar"){
+                    x.className += " responsive";
+                } 
+                else{
+                    x.className = "navbar";
+                }
+            }
+        </script>
+    <!-- Main Content of Page -->
+        <!-- SlideShow Part -->
+        <div class="slideshow-container">
+            <div class="slider fade">
+                <div class="numbertext">1/4</div>
+                <img src="images/Home/SlideShow/1.jpg" style="100%">
+                <div class="caption">Food aid: To support 100,000 poor and vulnerable families affected by the COVID with food baskets to ensure food and nutrition security for 30 days. </div>
+            </div>
+            <div class="slider fade">
+                <div class="numbertext">2/4</div>
+                <img src="images/Home/SlideShow/2.jpg" style="100%">
+                <div class="caption">The kids we teach at our centres are from diverse backgrounds. It is our dream to provide every child in India with quality education.</div>
+            </div>
+            <div class="slider fade">
+                <div class="numbertext">3/4</div>
+                <img src="images/Home/SlideShow/3.jpg" style="100%">
+                <div class="caption">Our volunteers planting trees donated by donors for the noble cause of afforestation. </div>
+            </div>
+            <div class="slider fade">
+                <div class="numbertext">4/4</div>
+                <img src="images/Home/SlideShow/4.jpg" style="100%">
+                <div class="caption">Books Distribution among poor students who can't afford to purchase one so that they can easily study.</div>
+            </div>
+            
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+            
+            <div class="dot-container" style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+        
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("slider");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" dot-active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+        </script>
+        
+        <!-- Glowing Text Cards -->
+        
+        <div class="text-heading"><h1 class="font1">Awarenness is the greatest agent for change</h1></div>
+        <div class="text-cards">
+            <div class="text-card">
+                <div class="circle" style="background-color:#dc3545;"><i class="fas fa-hand-holding-usd" style="padding: 50px 0"></i></div>
+                <h2>Donations</h2>
+                <p>Happiness consists of giving and serving others!</p>
+                <a href="Donate.html"><button type="button">Donate</button></a>
+            </div>
+            
+            <div class="text-card">
+                <div class="circle" style="background-color:#ffd500;"><i class="fas fa-lightbulb" style="padding: 50px 0"></i></div>
+                <h2>Give Inpiration</h2>
+                <p>Motivation is an important factor which encourages persons to give their best performance and help in reaching enterprise goals.</p>
+                <a href="Initiatives.html"><button type="button">Initiatives</button></a>
+            </div>
+            
+            <div class="text-card">
+                <div class="circle" style="background-color:#00b300;"><i class="fas fa-tshirt" style="padding: 50px 0"></i></div>
+                <h2>Become a Volunteer</h2>
+                <p>Give your services to the people and the nature</p>
+                <a href="Volunteers.html"><button type="button">Volunteer</button></a>
+            </div>
+        </div>
+        
+        <!--Impact of Organisation-->
+        
+        <div class="impact font1">
+            <div class="impact-text">
+                <h1 style="border-bottom: 2px solid;">Our Impact</h1>
+                <p>NGOs offer financial perks under challenging times to various sections of societies that are craving for help. Apart from advocating human rights, NGOs can arrange substantial funds for the local government to push social-oriented programs forward.</p>
+            </div>
+        
+            <div class="impact-image">
+                <img src="images/Home/impact.png">  
+            </div>
+        </div>
+        
+        <!-- Media Links Section -->
+        
+        <div class="media-links">
+            <h2 style="font-size: 30px">Follow Us On:</h2>  
+            <a href="https://www.facebook.com/madhaverma007" class="cblue"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/madhav_chandok1/" class="cred"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCh04LO5Po1hbWBbhT4F2siw" class="cred"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/MadhavChandok2" class="cblue"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/madhav-chandok/" class="cblue"><i class="fab fa-linkedin"></i></a>
+        </div>
+                
+    <!-- Footer Content --> 
+        
+        <div class="footer-container">
+            <div class="newsletter">
+                <form onsubmit="newslettersubmission()">
+                    <div class="news-container">
+                        <h1 style="text-align: center;">Subscribe to our Newsletter</h1>
+                        <p style="text-align: justify-all">“Join our community! Compassionate people like you are changing the world. Enter your email to join the movement.”</p><br>
+                    </div>
+                    <div class="news-container">
+                        <input type="text" placeholder="Name" name="name" required>
+                        <input type="email" placeholder="Email Address" name="mail" required>
+                        <label>
+                            <input type="checkbox" checked="checked" name="subscribe">Daily Newsletter
+                        </label>
+                    </div>
+                    <div class="newsletter-submit">
+                        <center><input type="submit" value="Subscribe"></center>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <script>
+            function newslettersubmission(){
+                alert("Your request for the newsletter has been accepted. Please check your mail for further notifications. Thank You!")
+            }
+        </script>
+        
+        <div class="copyright">
+            <p>Copyright &#169 2021 DoNation Foundation - Search Powered By <a href="www.google.com" style="text-decoration: none;  color: orange"> Google</a></p>
+        </div>
+    </body>
+</html>

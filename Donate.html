@@ -1,0 +1,149 @@
+<!--Donate-->
+
+<!DOCTYPE html>
+<html language="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/donate.css">
+    </head>
+
+    <body>
+         <!-- Sticky Navigation Bar -->
+        <div class="top-container">
+            <a href="index.html"><img src="images/Logo.png" alt="DoNation Charitable Trust" id="logo"></a>
+        </div>
+        <div class="navbar" id="sticky-navbar">
+            <a href="index.html">Home</a>
+            <a href="Initiatives.html">Initiatives</a>
+            <a href="Volunteers.html">Volunteer</a>
+            <a class="head-active" href="Donate.html">Donate</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="ContactUs.html">Contact Us</a>
+            <a href="javascript:void(0);" class="res_icon1" onclick="responsivenavi()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="javascript:void(0);" class="res_icon2" onclick="responsivenavi()">
+                <i class="fa fa-times"></i>
+            </a>
+        </div><br>
+        
+        <script>
+            window.onscroll = function() {stickynavi()};
+
+            var header = document.getElementById("sticky-navbar");
+            var sticky = header.offsetTop;
+
+            function stickynavi(){
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } 
+                else{
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+        
+        <script>
+            function responsivenavi(){
+                var x = document.getElementById("sticky-navbar");
+                if (x.className === "navbar"){
+                    x.className += " responsive";
+                } 
+                else{
+                    x.className = "navbar";
+                }
+            }
+        </script>
+        
+        <!---->
+        
+        <div class="reason" style="text-align: center;">
+            <h1 style="border-bottom: 2px solid;" class="font1">WHY SHOULD YOU DONATE</h1>
+            <img src="images/donate/1.jpg">
+            <p>The Coronavirus pandemic has affected millions of lives around us. Many have lost their source of income and cannot feed their families or provide for their children's education. Without proper protective gear, frontline workers in the health sector and other public services are putting themselves at risk of the virus. And street animals are in distress with little food available and in need of urgent care. This campaign aims to provide basic essentials to combat the widespread suffering due to the COVID crisis. Our goal is to directly support those in need and help them through this unprecedented catastrophe.</p>
+            <p>Throughout last decade, DoNation Foundation has been at the forefront in providing urgent relief materials and aid to the needy during natural calamities, crisis situations, extreme weather conditions etc. DoNation Foundation is again standing strong during this global healthcare crisis posed due to Coronavirus.<br><br>Homeless are hardly aware of the dangers of Coronavirus and the solutions available to fight against it. The current Coronavirus (Covid-19) outbreak continues to spread, with growing numbers of confirmed cases in India. This makes lakhs of homeless living on the streets with lack of ability to self- quarantine, access to medical care acutely vulnerable.<br><br>DoNation Foundation is providing all necessary help and services to this vulnerable section of the society in the time of crisis. Come out in support for your fellow beings. You can help us by donating material as per following details :-<br><br>
+            </p>
+            <p style="text-align: center;"><b>COLLECTION CENTRE: DONATION FOUNDATION,  LOREM IPSUM ROAD, NEW DELHI, 110023 <br><br>PHONE: 011-26561333</b></p>
+            <a href="#payment"><input type="button" id="donate" value="Donate"></a>
+        </div>
+        
+        <!--Payment Types-->
+        
+        <div class="payment-type" id="payment">
+            <h2 class="font1">Please make an online donation from credit and debit cared networks like Visa, Mastercard, Americal Express and RuPay or Net Banking (50+ Options), Payment Wallet, UPI or NEFT/RTGS/IMPS</h2>
+            <img src="images/donate/payment-methods.png">
+            
+            <h2 class="font1">Click on the link below for donation</h2>
+            <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HVHCMlbf2V5ube" async> </script></form><br><br>
+            
+            <div class="payment-note">
+                <h2 class="font1">PLEASE NOTE:</h2>
+                <ul class="fa-ul">
+                    <li><i class="fas fa-rupee-sign"></i>   As a policy we do not accept Cash Donation.</li><br>
+                    <li><i class="fas fa-rupee-sign"></i>   Donations to Donation Foundation are exempt from 50% tax under section 80G of the Income Tax Act.</li><br>
+                    <li><i class="fas fa-rupee-sign"></i>   Please share the details after you have made the donation to help@donation.org along with your complete address and PAN card number enabling us to send 80G tax exemption receipt of the same.</li><br>
+                    <li><i class="fas fa-rupee-sign"></i>   Donation Foundation is not registered with FCRA and we cannot accept foreign donations. We can accept donation from Non-Resident Indian only through normal banking channels, is not treated as foreign contribution. However, while accepting any donation from such NRO, it is mandatory to obtain his passport detials to ascertain that he/she is an Indian Passport Holder.</li><br>
+                    <li><i class="fas fa-rupee-sign"></i>   In case you are a Non-Resident Indian and Indian Passport holder and wish to donate, please write to collection@donation.org or speak to him @ 9350xxxxxx</li><br>
+                </ul>
+                
+                <h2 class="font1">DONATE THROUGH CHEQUE</h2>
+                <ul class="fa-ul">
+                    <li><i class="fas fa-money-check"></i>   Cheques can be made in favour of "DONATION FOUNDATION FOR CDRBG TRUST"</li><br>
+                    <li><i class="fas fa-money-check"></i>   Please send the same at:</li>
+                    <p><b>DONATION<br>FOUNDATION,<br>
+                        LOREM IPSUM ROAD,<br>NEW DELHI-110023<br> PHONE: 011-26561333</b></p>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Media Links Section -->
+        
+        <div class="media-links">
+            <h2 style="font-size: 30px">Follow Us On:</h2>  
+            <a href="https://www.facebook.com/madhaverma007" class="cblue"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/madhav_chandok1/" class="cred"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCh04LO5Po1hbWBbhT4F2siw" class="cred"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/MadhavChandok2" class="cblue"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/madhav-chandok/" class="cblue"><i class="fab fa-linkedin"></i></a>
+        </div>
+                
+    <!-- Footer Content -->
+        
+        <div class="footer-container">
+            <div class="newsletter">
+                <form onsubmit="newslettersubmission()">
+                    <div class="news-container" style="text-align: center; ">
+                        <h1>Subscribe to our Newsletter</h1>
+                        <p>“Join our community! Compassionate people like you are changing the world. Enter your email to join the movement.”</p><br>
+                    </div>
+                    <div class="news-container">
+                        <input type="text" placeholder="Name" name="name" required>
+                        <input type="email" placeholder="Email Address" name="mail" required>
+                        <label>
+                            <input type="checkbox" checked="checked" name="subscribe">Daily Newsletter
+                        </label>
+                    </div>
+                    <div class="newsletter-submit">
+                        <center><input type="submit" value="Subscribe"></center>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <script>
+            function newslettersubmission(){
+                alert("Your request for the newsletter has been accepted. Please check your mail for further notifications. Thank You!")
+            }
+        </script>
+        
+        <div class="copyright">
+            <p>Copyright &#169 2021 DoNation Foundation - Search Powered By <a href="www.google.com" style="text-decoration: none;  color: orange"> Google</a></p>
+        </div>
+    </body>
+</html>

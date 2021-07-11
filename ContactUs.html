@@ -1,0 +1,301 @@
+<!--Contact Details-->
+
+<!DOCTYPE html>
+<html language="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/contact.css">
+    </head>
+
+    <body>
+         <!-- Sticky Navigation Bar -->
+        <div class="top-container">
+            <a href="index.html"><img src="images/Logo.png" alt="DoNation Charitable Trust" id="logo"></a>
+        </div>
+        <div class="navbar" id="sticky-navbar">
+            <a href="index.html">Home</a>
+            <a href="Initiatives.html">Initiatives</a>
+            <a href="Volunteers.html">Volunteer</a>
+            <a href="Donate.html">Donate</a>
+            <a href="AboutUs.html">About Us</a>
+            <a class="head-active" href="ContactUs.html">Contact Us</a>
+            <a href="javascript:void(0);" class="res_icon1" onclick="responsivenavi()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="javascript:void(0);" class="res_icon2" onclick="responsivenavi()">
+                <i class="fa fa-times"></i>
+            </a>
+        </div><br>
+        
+        <script>
+            window.onscroll = function() {stickynavi()};
+
+            var header = document.getElementById("sticky-navbar");
+            var sticky = header.offsetTop;
+
+            function stickynavi(){
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } 
+                else{
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+        
+        <script>
+            function responsivenavi(){
+                var x = document.getElementById("sticky-navbar");
+                if (x.className === "navbar"){
+                    x.className += " responsive";
+                } 
+                else{
+                    x.className = "navbar";
+                }
+            }
+        </script>
+        
+        <!-- Contact Information -->
+        <div class="contact-table">
+            <h2 class="font1" style="border-bottom: 2px solid; margin:0 30px;">State HelpLine Numbers of DoNation Foundation</h2>
+            <table>
+                <tr>
+                    <th>Serial No.</th>
+                    <th>State</th>
+                    <th>Contact Number</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Andhra Pradesh</td>
+                    <td>+91 901xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Arunachal Pradesh</td>
+                    <td>+91 902xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Assam</td>
+                    <td>+91 903xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bihar</td>
+                    <td>+91 904xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Chhattisgarh</td>
+                    <td>+91 905xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Goa</td>
+                    <td>+91 906xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Gujrat</td>
+                    <td>+91 907xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Haryana</td>
+                    <td>+91 908xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Himachal Pradesh</td>
+                    <td>+91 909xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Jharkhand</td>
+                    <td>+91 910xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Karnataka</td>
+                    <td>+91 911xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Kerala</td>
+                    <td>+91 912xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Madhya Pradesh</td>
+                    <td>+91 913xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Maharashtra</td>
+                    <td>+91 914xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Manipuri</td>
+                    <td>+91 915xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Meghalaya</td>
+                    <td>+91 916xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Mizoram</td>
+                    <td>+91 917xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Nagaland</td>
+                    <td>+91 918xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Odisha</td>
+                    <td>+91 919xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Punjab</td>
+                    <td>+91 920xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Rajasthan</td>
+                    <td>+91 921xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>Sikkim</td>
+                    <td>+91 922xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>Tamil Nadu</td>
+                    <td>+91 923xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>Telangana</td>
+                    <td>+91 924xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>Tripura</td>
+                    <td>+91 925xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>Uttar Pradesh</td>
+                    <td>+91 926xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>Uttarakhand</td>
+                    <td>+91 927xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>West Bengal</td>
+                    <td>+91 928xxxxxxx</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="contact-container">
+            <h1 class="font1" style="border-bottom: 2px solid;">Headquarter Details</h1>
+            <div class="headquarter">
+                <i class="fas fa-map"></i>
+                <h3>ADDRESS</h3>
+                <p>Lorem Ipsum Road,<br>New Delhi,ND 110023 </p>
+            </div><br>
+            <div class="headquarter">
+                <i class="fas fa-phone"></i>
+                <h3>CALL US</h3>
+                <p><b>+91 9203xxxxxx<br>+91 9204xxxxxx</b></p>
+            </div><br>
+            <div class="headquarter">
+                <i class="fas fa-envelope"></i>
+                <h3>EMAIL US</h3>
+                <p>helpdesk@donation.org<br>contact@donation.org</p>
+            </div><br>
+            <div class="headquarter">
+                <i class="fas fa-clock"></i>
+                <h3>WORKING HOURS</h3>
+                <p>Mon - Fri: 9AM to 5PM<br>Sunday: 9AM to 1PM</p>
+            </div>
+        </div>
+        
+        <div class="queries" onsubmit="alertFunction();">
+            <form>
+                <h1 class="font1" style="border-bottom: 2px solid; margin: 30px;">Have any queries.<br>Share it with us</h1>
+                <input type="text" id="name" placeholder="Your Full Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="text" id="subject" placeholder="Subject" required>
+                <input type="text" id="message" placeholder="Type your message here" style="height: 200px;" required>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+        
+        <script>
+            function alertFunction(){
+                alert("Your Reponse has been submitted. Our executive will reach you soon.")
+            }
+        </script>
+        
+        <!-- Media Links Section -->
+        
+        <div class="media-links">
+            <h2 style="font-size: 30px">Follow Us On:</h2>  
+            <a href="https://www.facebook.com/madhaverma007" class="cblue"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/madhav_chandok1/" class="cred"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCh04LO5Po1hbWBbhT4F2siw" class="cred"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/MadhavChandok2" class="cblue"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/madhav-chandok/" class="cblue"><i class="fab fa-linkedin"></i></a>
+        </div>
+                
+    <!-- Footer Content -->
+        
+        <div class="footer-container">
+            <div class="newsletter">
+                <form onsubmit="newslettersubmission()">
+                    <div class="news-container" style="text-align: center; ">
+                        <h1>Subscribe to our Newsletter</h1>
+                        <p>“Join our community! Compassionate people like you are changing the world. Enter your email to join the movement.”</p><br>
+                    </div>
+                    <div class="news-container">
+                        <input type="text" placeholder="Name" name="name" required>
+                        <input type="email" placeholder="Email Address" name="mail" required>
+                        <label>
+                            <input type="checkbox" checked="checked" name="subscribe">Daily Newsletter
+                        </label>
+                    </div>
+                    <div class="newsletter-submit">
+                        <center><input type="submit" value="Subscribe"></center>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <script>
+            function newslettersubmission(){
+                alert("Your request for the newsletter has been accepted. Please check your mail for further notifications. Thank You!")
+            }
+        </script>
+        
+        <div class="copyright">
+            <p style="text-align: left;">Copyright &#169 2021 DoNation Foundation - Search Powered By <a href="www.google.com" style="text-decoration: none;  color: orange"> Google</a></p>
+        </div>
+    </body>
+</html>

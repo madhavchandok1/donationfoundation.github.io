@@ -1,0 +1,181 @@
+<!--About Us-->
+
+<!DOCTYPE html>
+<html language="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/about.css">
+    </head>
+
+    <body>
+            <!-- Sticky Navigation Bar -->
+        
+        <div class="top-container">
+            <a href="index.html"><img src="images/Logo.png" alt="DoNation Charitable Trust" id="logo"></a>
+        </div>
+        <div class="navbar" id="sticky-navbar">
+            <a href="index.html">Home</a>
+            <a href="Initiatives.html">Initiatives</a>
+            <a href="Volunteers.html">Volunteer</a>
+            <a href="Donate.html">Donate</a>
+            <a class="head-active" href="AboutUs.html">About Us</a>
+            <a href="ContactUs.html">Contact Us</a>
+            <a href="javascript:void(0);" class="res_icon1" onclick="responsivenavi()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="javascript:void(0);" class="res_icon2" onclick="responsivenavi()">
+                <i class="fa fa-times"></i>
+            </a>
+        </div><br>
+        
+        <script>
+            window.onscroll = function() {stickynavi()};
+
+            var header = document.getElementById("sticky-navbar");
+            var sticky = header.offsetTop;
+
+            function stickynavi(){
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } 
+                else{
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+        
+        <script>
+            function responsivenavi(){
+                var x = document.getElementById("sticky-navbar");
+                if (x.className === "navbar"){
+                    x.className += " responsive";
+                } 
+                else{
+                    x.className = "navbar";
+                }
+            }
+        </script>
+        
+        <!-- History -->
+        
+        <div class="history">
+            <h1 class="font1">OUR HISTORY</h1>
+            <p>DoNation Foundation was started as a helping hand to the society in the Early 2020 as a Global pandemic came out of nowhere and started a big challenge for the health care workers and Doctors in many ways including economic and financial challenges worldwide. That was the time when this organisation came into existence to act as a bridge and help the health system of India.<br><br>DoNation Foundation is a Non-Profit Organisation whose motive is to help all the healthcare workers and all the needy people suffering in this time of coronavirus pandemic and help them with the help of the donations donated by you all nice people. Our job is to provide all the protective essentials such as masks, sanitizers, PPE kits to the health care workers and the people in need with the help of your donations and all the blessings.</p>
+        </div>
+        
+        <!-- Helping -->
+        
+        <div class="help">
+            <h1 class="font1">How Your Donations Will Help Us</h1><br>
+            <ul class="fa-ul">
+                <li><i class="fas fa-hands-helping"></i>    Donations will be directly used for providing Food and Essentials for underpriviledged.</li><br>
+                <li><i class="fas fa-hands-helping"></i>    Masks, Sanitizers, PPE kits will be directly sent to the healthworkers by our team.</li><br>
+                <li><i class="fas fa-hands-helping"></i>    One Person's Donation can feed a whole Family of underpriviledged and daily wage workers.</li><br>
+                <li><i class="fas fa-hands-helping"></i>    One Donation can even help a child get Education and a bright future.</li>
+            </ul>
+        </div>
+        
+        <!-- Mission -->
+        
+        <div class="mission">
+            <h1 class="font1">OUR MISSION</h1>
+            <ul class="fa-ul">
+                <li><i class="fab fa-envira"></i>   "DoNation Foundation" did several projects within last few months not only for the health care workers but also for the families of the underprivileged and daily wage earners who were hit the hardest during these tough times.</li><br>
+                <li><i class="fab fa-envira"></i>   Our mission "AAHAR" was one of the most successful missions which provided food and all essentials for these underprivilaged familes with the help of all the donations donated by thousands of helping hands.</li><br>
+                <li><i class="fab fa-envira"></i>   In the mid 2020 One more project for providing all the protective equipments to the health care workers was undertaken by our organisation in which thousands of Masks, Sanitizers, PPE kits and other essentials were successfully delivered to the hospitals for the health care workers fighting this pandemic.</li><br>
+                <li><i class="fab fa-envira"></i>   Our project "Vidya" was also executed in May 2020 which helped 200 underpriviledged children to get free eduction with the help of your donations.</li><br>
+            </ul>
+            <p class="font2" style="padding-left: 40px;">Our Foundation will continue to do this good work with the help of your support and blessings. <i class="fas fa-praying-hands" style="color:brown;"></i></p>
+        </div>
+        
+        <!-- Link for Volunteering -->
+        
+        <div class="volunteering">
+            <div class="vtext">
+                <h2>Be a part of DoNation Foundation</h2>
+            </div>
+            <div class="vsubmit">
+                <div class="vbutton">
+                    <a href="Volunteers.html #registration-form"><p>JOIN US AND START A NEW JOURNEY</p></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Text Cards -->
+        <h1 id="achievements" class="font1">ACHIEVEMENTS OF DoNation FOUNDATION</h1>
+        <div class="text-cards">
+            <div class="text-card">
+                <div class="card-heading" style="background-color: #5dd55d">PROJECTS</div>
+                <div class="card-numbers">50+</div>
+                <div class="card-paragraph">INCLUDING CHILDREN CENTRIC AND FUND RAISING</div>
+            </div>
+                
+            <div class="text-card">
+                <div class="card-heading" style="background-color: #ff4d4d">CHILDREN</div>
+                <div class="card-numbers">200+</div>
+                <div class="card-paragraph">CHILDREN TO WHOM DONATION IS PROVIDING COMPLETE SUPPORT</div>
+            </div>
+                
+            <div class="text-card">
+                <div class="card-heading" style="background-color: #ffa64d">VOLUNTEERS</div>
+                <div class="card-numbers">300+</div>
+                <div class="card-paragraph">PEOPLE WHO HAVE BEEN A PART OF DONATION</div>
+            </div>  
+            <div class="text-card">
+                <div class="card-heading" style="background-color: #884dff">IMPACT</div>
+                <div class="card-numbers">8500+</div>
+                <div class="card-paragraph">CHILDREN IMPACTED THROUGH EVENTS AND PROJECTS   </div>
+            </div>
+        </div>
+        
+        <!-- Media Links Section -->
+        
+        <div class="media-links">
+            <h2 style="font-size: 30px">Follow Us On:</h2>  
+            <a href="https://www.facebook.com/madhaverma007" class="cblue"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/madhav_chandok1/" class="cred"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCh04LO5Po1hbWBbhT4F2siw" class="cred"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/MadhavChandok2" class="cblue"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/madhav-chandok/" class="cblue"><i class="fab fa-linkedin"></i></a>
+        </div>
+                
+    <!-- Footer Content -->
+        
+        <div class="footer-container">
+            <div class="newsletter">
+                <form onsubmit="newslettersubmission()">
+                    <div class="news-container" style="text-align: center; ">
+                        <h1>Subscribe to our Newsletter</h1>
+                        <p>“Join our community! Compassionate people like you are changing the world. Enter your email to join the movement.”</p><br>
+                    </div>
+                    <div class="news-container">
+                        <input type="text" placeholder="Name" name="name" required>
+                        <input type="email" placeholder="Email Address" name="mail" required>
+                        <label>
+                            <input type="checkbox" checked="checked" name="subscribe">Daily Newsletter
+                        </label>
+                    </div>
+                    <div class="newsletter-submit">
+                        <center><input type="submit" value="Subscribe"></center>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <script>
+            function newslettersubmission(){
+                alert("Your request for the newsletter has been accepted. Please check your mail for further notifications. Thank You!")
+            }
+        </script>
+        
+        <div class="copyright">
+            <p>Copyright &#169 2021 DoNation Foundation - Search Powered By <a href="www.google.com" style="text-decoration: none;  color: orange"> Google</a></p>
+        </div>
+    </body>
+</html>

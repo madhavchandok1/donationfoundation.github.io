@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+/*---------------Font Class--------------------------*/
+
+.font1{
+    font-family: 'Merriweather', serif;
+}
+
+.font2{
+    font-family: 'Libre Baskerville', serif;
+}
+/* ---------------------------- Navigation Configuration ---------------------*/
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html p{
+    font-family: 'Libre Baskerville', serif;
+    text-align: justify;
+    text-align-last: center;
+}
+
+html li{
+    font-family: 'Libre Baskerville', serif;
+    text-align: justify;
+    font-size: 18px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffe5;
+}
+
+
+.top-container{
+    text-align: center;
+    background-color: #ffd7ce;
+    padding:auto 10px;
+    height:160px;
+}
+
+ #logo{
+    height:135px;
+    width: 135px;
+    transition: 0.5s;
+}
+
+#logo:hover{
+    height: 150px;
+    width:  150px;
+    transition: 0.5s;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333333;
+    box-shadow: 0 5px 4px 0 rgba(0,0,0,.2);
+    text-align: center;
+    width:100%;
+    margin: 0 auto;
+    z-index: 1;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.navbar > a{
+    float: left;
+    display: block;
+    text-align: center;
+    width: 16.667%;
+    padding: 9px;
+    font-size: 19px;
+    transition: 0.5s ease-in;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+.navbar > a:hover, .navbar > a:focus{
+    background-color: #80c1ff;
+    color:black;
+    box-shadow: 0 11px 11px 0 #339cff;
+    transition: 0.5sa ease-in ;
+    
+}
+
+.navbar a.head-active{
+    background-color: #00f0c0;
+    color:white;
+    border-radius: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-style:italic;
+    border-radius: 5px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+
+/*----------------------Social Media Container Configuration------------*/
+
+.media-links{
+    background-color: #e6ccff;
+    padding: 5px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 8px 8px 0 rgb(105, 0, 204, 0.5);
+    margin: 0 15px 10px 15px;
+}
+    
+.media-links h2{
+    font-family: 'Merriweather', serif;
+}
+.media-links a{
+    color: #804d4d; 
+    font-size:  30px;
+    padding: 0 25px;
+}
+
+.media-links .cblue:hover, .media-links .cblue:focus{
+    color: blue;
+    box-shadow: 0 5px 0 0 blue;
+    transition: 0.4s ease-in;
+}
+
+.media-links .cred:hover, .media-links .cred:focus{
+    color: red;
+    box-shadow: 0 5px 0 0 red;
+    transition: 0.4s ease-in;
+}
+
+@media screen and (max-width:450px){
+    .media-links a{
+        padding: 0 12px;
+    }
+}
+
+/*------------------------ Footer Configuration------------------------------*/
+
+.footer-container{
+    background-color: #333333;
+    width: 100%;
+    padding:50px;
+    box-shadow: 0px 30px 30px 0px black;
+    margin-bottom: 2px;
+}
+
+.footer-container .newsletter{
+    background-color: aliceblue;
+    text-align: justify;
+    padding: 15px 50px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.news-container h1{
+    font-family: 'Merriweather', serif;
+}
+
+.news-container p{
+    font-size: 18px;
+}
+
+input[type=text], input[type=email], input[type=submit], input[type=tel]{
+    width: 100%;
+    padding: 11px;
+    margin: 15px 0;
+    display: block;
+    border: 1px solid 1c1c1c;
+    box-sizing: border-box;
+    font-size:15px;
+}
+
+input[type=checkbox]{
+    margin:10px;
+}
+
+input[type=submit]{
+    width: 70%;
+    margin: 20px auto;
+    background-color: #77b5d4;
+    border-style: none;
+    box-shadow: 0 8px 8px 0 #31789b;
+    border: 1px solid #31789b;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    transition: 0.3s ease-in;
+    border-radius:15px;
+}
+
+input[type=submit]:hover{
+    background-color: #ff4d4d;
+    transition: 0.3s ease-in;
+}
+
+@media screen and (max-width: 500px){
+    .news-container p{
+        font-size: 13px;
+    }
+}
+/*---------------Copyrights of Website----------------  */
+.copyright{
+    background-color: #5f696d;
+    color: ghostwhite;
+    padding:15px;
+    font-size:13px;
+}
+
+.copyright{
+    text-align: center;
+}

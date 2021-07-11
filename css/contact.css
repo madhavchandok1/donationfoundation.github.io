@@ -1,0 +1,175 @@
+/* ----------------------- Responsive Navigation Bar ------------------------*/
+.navbar .res_icon1, .navbar .res_icon2{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .navbar a:not(:nth-child(6)) {display: none;}
+    .navbar a:nth-child(6){
+        width: 83.2%;
+    }
+    .navbar a.res_icon1 {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .navbar.responsive {position:relative;}
+    .navbar.responsive .res_icon1 {
+        display: none;
+    }
+    .navbar .responsive .res_icon2{
+        float: right;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: auto;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/*---------Contact Table Configuration------------*/
+
+.contact-table{
+    background-color: #d5f4e6;
+    padding:30px 0;
+    text-align: center;
+    margin:20px 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    box-shadow: 0 8px 8px 0 #86dfb7;
+}
+
+.contact-table table{
+    margin: 20px auto;
+    width: 70%;
+    background-color: #fefbd8;
+    border-collapse: collapse;
+    
+}
+
+.contact-table table th:first-child{
+    width: 20%;
+    height: 30px;
+}
+.contact-table table th:nth-child(2){
+    width: 45%;
+}
+
+.contact-table table td, th{
+    text-align: center;
+    padding: 10px 20px;
+    border: 2px solid black;
+}
+
+.contact-table table tr:nth-child(even){
+    background-color: #fad8d1;
+}
+
+.contact-table table tr td:nth-child(3){
+    font-weight: 700;
+}
+
+@media screen and (max-width: 500px){
+    .contact-table table{
+        font-size:15px;
+        width:100%;
+    }
+    
+    .contact-table{
+        margin: 10px 0;
+    }
+}
+
+/*--------------Headquaters Details------------*/ 
+
+.contact-container{
+    background-color: bisque;
+    margin: 10px 20px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 8px 0 #ffba66;
+}
+
+.contact-container h3{
+    font-family: 'Merriweather', serif;
+}
+
+.contact-container p{
+    line-height: 30px;
+}
+
+.headquarter{
+    background-color: #ffd199;
+    padding: 15px;
+    border-radius: 20px;
+    line-height: 20px;
+    box-shadow: 0 7px 7px 0 #cc7000;
+    transition: 0.3s ease-in;
+}
+
+.headquarter i{
+    font-size:60px;
+    color: #a30f2d
+}
+
+.headquarter:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in;
+}
+
+@media screen and (max-width: 720px){
+    .headquarter i{
+        font-size: 40px;
+    }
+}
+/*--------------Query Form Configuration----------*/
+
+.queries{
+    background-color: #ffcccc;
+    margin: 20px 20px;
+    border-radius:20px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 5px 5px 0 #ff8080;
+}
+
+.queries input[type=text], .queries input[type=email]{
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1.1px solid;
+}
+
+.queries input[type=submit]{
+    background-color: #77b5d4;
+    box-shadow: 0 4px 4px 0 #31789b;
+    border: 1px solid #31789b;
+    border-radius: 10px;
+    transition: 0.3s ease-in;
+    font-size:18px;
+    font-weight: 700;
+    color: white;
+    border-radius:15px;
+    
+}
+
+.queries input[type=submit]:hover{
+    background-color: #ff4d4d;
+    transition: 0.3s ease-in;
+}
+
+@media screen and (max-width: 720px){
+    .queries input[type=text], .queries input[type=email]{
+        width:80%;
+    }
+}

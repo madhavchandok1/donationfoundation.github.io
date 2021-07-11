@@ -1,0 +1,180 @@
+/* ----------------------- Responsive Navigation Bar ------------------------*/
+.navbar .res_icon1, .navbar .res_icon2{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .navbar a:not(:nth-child(2)) {display: none;}
+    .navbar a:nth-child(2){
+        width: 83.2%;
+    }
+    .navbar a.res_icon1 {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .navbar.responsive {position:relative;}
+    .navbar.responsive .res_icon1 {
+        display: none;
+    }
+    .navbar .responsive .res_icon2{
+        float: right;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: auto;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/*---------------- Working of the NGO ----------------*/
+
+#working {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: #ead0ae;
+    padding-bottom: 10px;
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: 0 8px 8px 0 #d09549;
+}
+
+#working-heading{
+    font-size: 15px;
+    background-color: rgb(0,0,0,0.6);
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px){
+    #working-heading{
+        font-size:10px;
+        transform: translate(-50%, -180%);
+    }
+}
+
+/*------------Activities of DoNation----------------*/
+
+.activities{
+    background-color: #ffe6f3;
+    margin:30px 20px;
+    padding: 30px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px 0 #ffb3da;
+}
+
+.activity-container{
+    display: flex;
+    width: 100%;
+    background-color: #ffcccc;
+    margin:30px 0px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 8px 8px 0 #ff9999;
+    transition: 0.2s ease-in;
+}
+
+.activity-container:hover{
+    transform: scale(1.03);
+    transition: 0.2s ease-in
+;}
+
+.activity-text{
+    margin: auto 10px;
+    width:50%;
+    padding: auto 10px;
+}
+
+.activity-text h2{
+    text-align: center;
+    border-bottom: 2px solid;
+}
+
+.activity-text p{
+    font-size:17px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+
+.activity-image{
+    width:60%;
+    padding: 10px;
+    text-align: center;
+    margin: auto 0;
+}
+
+.activity-image img{
+    width: 100%;
+    border: 2px solid red;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .activities{
+        margin:30px 10px;
+        padding: 30px 10px;
+}
+    .activity-container{
+        display: block;
+    }
+    
+    .activity-text h2{
+        text-align: center;
+    }
+    .activity-text{
+        width:100%;
+        margin:0
+    }
+    
+    .activity-text p{
+        font-size:15px;
+    }
+    .activity-image{
+        width:100%;
+    }
+}
+
+/*----------------Campaigns of Organisation-----------*/
+
+.campaigns{
+    background-color: #ffe6b3;
+    margin:30px 20px;
+    padding:20px;
+    border-radius:20px;
+    box-shadow: 0 8px 8px 0 #ffcc66;
+}
+
+.campaigns ul i{
+    color:red;
+    font-size: 25px;
+}
+.campaigns ul li{
+    font-size:18px;
+    line-height: 30px;
+    text-align: justify;
+    padding-right:30px;
+}
+
+@media screen and (max-width: 600px){
+    .campaigns ul li{
+        font-size: 15px;
+        padding: 0;
+    }
+    
+    .campaigns ul{
+        margin: 0;
+    }
+}

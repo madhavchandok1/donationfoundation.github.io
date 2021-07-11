@@ -1,0 +1,171 @@
+<!--Initiatives-->
+
+<!DOCTYPE html>
+<html language="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/initiatives.css">
+    </head>
+
+    <body>
+    <!-- Sticky Navigation Bar -->
+        
+        <div class="top-container">
+            <a href="index.html"><img src="images/Logo.png" alt="DoNation Charitable Trust" id="logo"></a>
+        </div>
+        <div class="navbar" id="sticky-navbar">
+            <a href="index.html">Home</a>
+            <a class="head-active" href="Initiatives.html">Initiatives</a>
+            <a href="Volunteers.html">Volunteer</a>
+            <a href="Donate.html">Donate</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="ContactUs.html">Contact Us</a>
+            <a href="javascript:void(0);" class="res_icon1" onclick="responsivenavi()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="javascript:void(0);" class="res_icon2" onclick="responsivenavi()">
+                <i class="fa fa-times"></i>
+            </a>
+        </div><br>
+        
+        <script>
+            window.onscroll = function() {stickynavi()};
+
+            var header = document.getElementById("sticky-navbar");
+            var sticky = header.offsetTop;
+
+            function stickynavi(){
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } 
+                else{
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+        
+        <script>
+            function responsivenavi(){
+                var x = document.getElementById("sticky-navbar");
+                if (x.className === "navbar"){
+                    x.className += " responsive";
+                } 
+                else{
+                    x.className = "navbar";
+                }
+            }
+        </script>
+        <!-- Main Content -->
+        
+        <div id="working">
+            <img src="images/Initiatives/cover.png" alt="Snow" style="width:100%;">
+            <div id="working-heading"><h1>HOW OUR NGO WORKS </h1></div>
+            <p style="color:black; font-size: 20px; font-weight: 700; padding: 0 20px;" class="font1"> Utilising funds raised through donation.<br><br>DoNation Foundation works for a wide range of causes</p>
+        </div>
+        
+        <div class="activities">
+            <p style="text-align: center; font-weight: 700; font-size: 30px;" class="font1">List of Activities done by our organization</p>
+            <div class="activity-container">
+                <div class="activity-text">
+                    <h2 class="font1">Raising funds for the needy ones</h2>
+                    <p>Indian migrant workers during the COVID-19 pandemic have faced multiple hardships. With factories and workplaces shut down due to the lockdown imposed in the country in the country. So our NGO is rasing funds to help them with food and other essentials.</p>
+                </div>
+                <div class="activity-image">
+                    <img src="images/Initiatives/activity1.jpg">
+                </div>
+            </div>
+            
+            <div class="activity-container">
+                <div class="activity-image">
+                    <img src="images/Initiatives/activity2.jpg">
+                </div>
+                <div class="activity-text">
+                    <h2 class="font1">What is the goal of our NGO?</h2>
+                    <p>Our organisation works for the urban poor by introducing sustainable livelihoods through an area-based community model. This also includes establishing skill training centres for the youth. With COVID-19 having adversely affected the migrant population</p>
+                </div>
+            </div>
+            
+            <div class="activity-container">
+                <div class="activity-text">
+                    <h2 class="font1">Other work done by our organisation</h2>
+                    <p>We have contributed in the field of education through dissemination of scholarships to the students of primary and junior school of the government schools. Every year we distribute approximately over 100 blankets in the month of January to the needy and poor.</p>
+                </div>
+                <div class="activity-image">
+                    <img src="images/Initiatives/activity3.jpg">
+                </div>
+            </div>
+            
+            <div class="activity-container">
+                <div class="activity-image">
+                    <img src="images/Initiatives/activity4.jpg">
+                </div>
+                <div class="activity-text">
+                    <h2 class="font1">Future aim of our NGO</h2>
+                    <p>Our NGO exist for a variety of purposes, usually to further the political or social goals of their members. Examples include improving the state of the natural environment, environment, encouraging the observance of human rights, improving the welfare of the disadvantaged, representing a corporate agenda.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!--Campaigns of Organisation-->
+        
+        <div class="campaigns">
+            <h1 style="text-align: center; border-bottom: 3px solid #ffcc66;" class="font1">Campaigns of our Organization</h1>
+            <ul class="fa-ul">
+                <li><i class="fas fa-hand-holding-medical"></i>  In August 2018, the DoNation Foundation and Triumph Motorcycle partnered to organize Freedom to Ride, a group ride in 16 cities in India to support girls' education</li><br>
+                <li><i class="fas fa-hand-holding-medical"></i>  Swedish    communications company Ericsson has developed a web-based training module for the Foundation's Twin e-learning program. In 2018, Ericsson announced that it would provide Internet connectivity at 34 DoNation education centers across India.</li><br>
+                <li><i class="fas fa-hand-holding-medical"></i>  DoNation Foundation launched its tele-counselling during lockdown to contain the spread of COVID-19 infection and help people across India through guidance on their health and mental well being.</li><br>
+                <li><i class="fas fa-hand-holding-medical"></i>  The foundation also works on various disaster relief time to time across India.</li>
+            </ul>
+        </div>
+      
+        <!-- Media Links Section -->
+        
+        <div class="media-links">
+            <h2 style="font-size: 30px">Follow Us On:</h2>  
+            <a href="https://www.facebook.com/madhaverma007" class="cblue"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/madhav_chandok1/" class="cred"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCh04LO5Po1hbWBbhT4F2siw" class="cred"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/MadhavChandok2" class="cblue"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/madhav-chandok/" class="cblue"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+    <!-- Footer Content -->
+        
+        <div class="footer-container">
+            <div class="newsletter">
+                <form onsubmit="newslettersubmission()">
+                    <div class="news-container" style="text-align: center; ">
+                        <h1>Subscribe to our Newsletter</h1>
+                        <p>“Join our community! Compassionate people like you are changing the world. Enter your email to join the movement.”</p><br>
+                    </div>
+                    <div class="news-container">
+                        <input type="text" placeholder="Name" name="name" required>
+                        <input type="email" placeholder="Email Address" name="mail" required>
+                        <label>
+                            <input type="checkbox" checked="checked" name="subscribe">Daily Newsletter
+                        </label>
+                    </div>
+                    <div class="newsletter-submit">
+                        <center><input type="submit" value="Subscribe"></center>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <script>
+            function newslettersubmission(){
+                alert("Your request for the newsletter has been accepted. Please check your mail for further notifications. Thank You!")
+            }
+        </script>
+        
+        <div class="copyright">
+            <p>Copyright &#169 2021 DoNation Foundation - Search Powered By <a href="www.google.com" style="text-decoration: none;  color: orange"> Google</a></p>
+        </div>
+    </body>
+</html>

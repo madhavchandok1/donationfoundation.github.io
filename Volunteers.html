@@ -1,0 +1,241 @@
+<!--Volunteers-->
+
+<!DOCTYPE html>
+<html language="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/volunteers.css">
+    </head>
+
+    <body>
+         <!-- Sticky Navigation Bar -->
+        <div class="top-container">
+            <a href="index.html"><img src="images/Logo.png" alt="DoNation Charitable Trust" id="logo"></a>
+        </div>
+        <div class="navbar" id="sticky-navbar">
+            <a href="index.html">Home</a>
+            <a href="Initiatives.html">Initiatives</a>
+            <a class="head-active" href="Volunteers.html">Volunteer</a>
+            <a href="Donate.html">Donate</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="ContactUs.html">Contact Us</a>
+            <a href="javascript:void(0);" class="res_icon1" onclick="responsivenavi()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="javascript:void(0);" class="res_icon2" onclick="responsivenavi()">
+                <i class="fa fa-times"></i>
+            </a>
+        </div><br>
+        
+        <script>
+            window.onscroll = function() {stickynavi()};
+
+            var header = document.getElementById("sticky-navbar");
+            var sticky = header.offsetTop;
+
+            function stickynavi(){
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } 
+                else{
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+        
+        <script>
+            function responsivenavi(){
+                var x = document.getElementById("sticky-navbar");
+                if (x.className === "navbar"){
+                    x.className += " responsive";
+                } 
+                else{
+                    x.className = "navbar";
+                }
+            }
+        </script>
+        
+        <!--Members-->
+        <!--Core Team-->
+        <div class="heading" style="text-align: center; margin: 20px; margin-bottom: 0; padding:10px; border-bottom: 2px solid"><h1 class="font1"> OUR CORE TEAM</h1></div><br>
+        <div class="core-team-container">
+            <div class="core-team-card">
+                <div class="core-card">
+                    <img src="images/volunteer/male.png">
+                    <div class="information">
+                        <h2>John Doe</h2>
+                        <p class="title">CEO and Founder</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p class="email">johndoe1@donation.org</p>
+                    </div>
+                </div>
+            </div>
+           
+           <div class="core-team-card">
+                <div class="core-card">
+                    <img src="images/volunteer/female.png">
+                    <div class="information">
+                        <h2>Mike Ross</h2>
+                        <p class="title">President</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p class="email">mikeross12@donation.org</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="core-team-card">
+                <div class="core-card">
+                    <img src="images/volunteer/male.png">
+                    <div class="information">
+                        <h2>Jane Doe</h2>
+                        <p class="title">Vice President</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p class="email">janedoe43@donation.org</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="core-team-card">
+                <div class="core-card">
+                    <img src="images/volunteer/female.png">
+                    <div class="information">
+                        <h2>Harry Clark</h2>
+                        <p class="title">Manager</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p class="email">harryclark@donation.org</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Volunteers-->
+        
+        <div class="heading" style="text-align: center; margin: 20px; margin-bottom: 0; padding:10px; border-bottom: 2px solid"><h1 class="font1"> OUR VOLUNTEERS AND SUPPORTERS</h1></div><br>
+        <div class="core-team-container" style="background-color: #ccf5ff;">
+            <div class="core-team-card">
+                <div class="core-card">
+                    <img src="images/volunteer/male.png">
+                    <div class="information">
+                        <h2>Raghav Anand</h2>
+                    </div>
+                </div>
+            </div>
+           
+           <div class="core-team-card">
+                <div class="core-card">
+                    <img src="images/volunteer/female.png">
+                    <div class="information">
+                        <h2>Nalini Shah</h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="core-team-card">
+                <div class="core-card">
+                    <img src="images/volunteer/male.png">
+                    <div class="information">
+                        <h2>Sonu Sood</h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="core-team-card">
+                <div class="core-card">
+                    <img src="images/volunteer/female.png">
+                    <div class="information">
+                        <h2>Anjali Shetty</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h2 style="text-align: right; margin: 20px 30px">and many more...</h2>
+        
+        <!-- Volunteer Registration Form -->
+        
+        <div class="registration" id="registration-form">
+            <h1 style="text-align: center; border-bottom: 2px solid;" class="font1">Volunteer Registration Form</h1><br>
+            <form onsubmit="registration()">
+                <label for="fname" class="required">Name: </label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your full name..." required><br>
+                
+                <label for="email" class="required">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Ex: example@example.com" required><br>
+                
+                <label for="contact" class="required">Contact Number:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Ex: 987654321" required><br>
+                
+                <label for="address" class="required">Address:</label>
+                <input type="text" id="address1" name="address" placeholder="Street Address Line 1*" required>
+                <input type="text" id="address1" name="address" placeholder="Street Address Line 2 (optional)">
+                <input type="text" id="city" name="address" placeholder="City*" required>
+                <input type="text" id="country" name="address" placeholder="Country*" required>
+                <input type="text" id="postal" name="address" placeholder="Postal Code*" required><br>
+                
+                <label for="skills" class="required">For which skills you want to volunteer:</label>
+                <input type="text" id="skills" name="skills" placeholder="Write Something..." required style="height: 200px;"><br>
+                
+                <label for="suggestions">Any special message you want us to know:</label>
+                <input type="text" id="suggestions" name="skills" placeholder="Write Something..." style="height: 200px;">
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        
+        <script>
+            function registration(){
+                alert("Your Registration Form has received successfully. Our Contact Team will contact you soon. Thank You for giving your valuable time!")
+            }
+        </script>
+        <!-- Media Links Section -->
+        
+        <div class="media-links">
+            <h2 style="font-size: 30px">Follow Us On:</h2>  
+            <a href="https://www.facebook.com/madhaverma007" class="cblue"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/madhav_chandok1/" class="cred"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCh04LO5Po1hbWBbhT4F2siw" class="cred"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/MadhavChandok2" class="cblue"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/madhav-chandok/" class="cblue"><i class="fab fa-linkedin"></i></a>
+        </div>
+        
+            
+    <!-- Footer Content -->
+        
+        <div class="footer-container">
+            <div class="newsletter">
+                <form onsubmit="newslettersubmission()">
+                    <div class="news-container" style="text-align: center; ">
+                        <h1>Subscribe to our Newsletter</h1>
+                        <p>“Join our community! Compassionate people like you are changing the world. Enter your email to join the movement.”</p><br>
+                    </div>
+                    <div class="news-container">
+                        <input type="text" placeholder="Name" name="name" required>
+                        <input type="email" placeholder="Email Address" name="mail" required>
+                        <label>
+                            <input type="checkbox" checked="checked" name="subscribe">Daily Newsletter
+                        </label>
+                    </div>
+                    <div class="newsletter-submit">
+                        <center><input type="submit" value="Subscribe"></center>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <script>
+            function newslettersubmission(){
+                alert("Your request for the newsletter has been accepted. Please check your mail for further notifications. Thank You!")
+            }
+        </script>
+        
+        <div class="copyright">
+            <p>Copyright &#169 2021 DoNation Foundation - Search Powered By <a href="www.google.com" style="text-decoration: none;  color: orange"> Google</a></p>
+        </div>
+    </body>
+</html>

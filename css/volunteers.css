@@ -1,0 +1,117 @@
+/* ----------------------- Responsive Navigation Bar ------------------------*/
+.navbar .res_icon1, .navbar .res_icon2{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .navbar a:not(:nth-child(3)) {display: none;}
+    .navbar a:nth-child(3){
+        width: 83.2%;
+    }
+    .navbar a.res_icon1 {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .navbar.responsive {position:relative;}
+    .navbar.responsive .res_icon1 {
+        display: none;
+    }
+    .navbar .responsive .res_icon2{
+        float: right;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: auto;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/*---------------Core Team Members------------------------*/
+.core-team-container{
+    display: flex;
+    background-color: #e6fffa;
+    margin:20px;
+    margin-top: 0px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0 rgb(0,0,0,0.5);
+}
+.core-team-card{
+    
+    width: 25%;
+    margin: 8px;
+    padding: 0 8px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px 0 rgb(0,0,0,0.5);
+    transition: 0.2s ease-in;
+}
+
+.core-team-card:hover{
+    transform: scale(1.10);
+    transition: 0.2s ease-in;
+}
+
+.core-card{
+    margin: 20px 10px;
+}
+
+.core-card img{
+    width: 100%;
+}
+
+.information{
+    text-align: center;
+}
+
+.information p{
+    font-size: 15px;
+}
+
+.email{
+    font-weight: 700;
+}
+
+.title{
+    color:grey;
+}
+@media screen and (max-width: 900px){
+    .core-team-container{
+        display: block;
+        width:80%;
+        margin: 20px auto;
+        padding: 10px 0;
+    }
+    .core-team-card{
+        width: 85%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+}
+
+/*--------------Volunteer Registration Form-------------------*/
+.required::after{
+    content: " *";
+    color: red;
+}
+
+.registration{
+    background-color: #ffcccc;
+    margin: 20px;
+    padding:40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px 0 rgb(0,0,0,0.5);
+}
+
+.registration label{
+    font-size: 19px;
+    font-weight: 700;
+}
